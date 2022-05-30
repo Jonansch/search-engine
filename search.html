@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <style>
     #bodyi {
-        display: grid;
-        grid-template-columns: 20%, 80%;
+
         background-color: #061e3e;
         color: white;
     }
@@ -36,9 +35,36 @@
     #e{
         border: none;
         border-radius: 200px;
-        max-width: 1000px;
-        height: 50px;
+        height: 5rem;
+        background-color: #d33e43;
+        border: none;
+        width: 50rem;
+        margin-left: 30px;
+        margin-right: 3rem;
+        padding-right: 8rem;
+        
+    }
 
+    #s1 {
+        width: 90px;
+        height: 50px;
+        font-size: 15px;
+        background-color: #061e3e;
+        color: #fff;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: width .5s,
+        border-radius .5s;
+        margin-top: 1.0rem;
+        transition: 200ms;
+        
+    }
+
+    #s1:hover {
+        font-size: 17px;
+        color: #061e3e;
+        background-color: #fff;
     }
 
     #r {
@@ -47,23 +73,25 @@
 
     #rere{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        margin-left: 100px;
-        margin-right: 100px;
+        background-color: #d33e43;
+        margin-left: 10rem;
+        margin-right: 10rem;
         border: none;
+        margin-bottom: 10rem;
         border-radius: 200px;
-        margin-bottom: 200px;
+        margin-top: 10rem;
+        padding-right: 2rem;
     }
 
     ::placeholder {
-        font-size: 20px;
+        font-size: 1.6rem;
         color: black;
         margin-top: 20px;
     }
 
     #divad {
+        display: grid;
+        grid-template-rows: 30%, 30%, 30%;
         background-color: rgba(0, 0, 0, 0.178);
         margin: 50px;
         border: none;
@@ -72,7 +100,7 @@
     }
 
     #po {
-        font-size: 60px;
+        font-size: 80px;
         text-align: center;
         margin-top: 0%;
         color: white;
@@ -85,7 +113,7 @@
     }
 
     #ptext {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     #divadb {
@@ -102,25 +130,34 @@
     }
 
     #ptextb {
-        font-size: 15px;
+        font-size: 30px;
     }
 
     #handy {
         display: grid;
         gap: 100px;
-        grid-template-columns: 30% 60%;
+        grid-template-columns: 30% 30%;
         margin-bottom: 200px;
+        width: 50rem;
 
+    }
+
+    #headline {
+        font-size: 6rem;
+        text-align: center;
     }
 
 </style>
 <head>
     <body id="bodyi">
         <div>
-            <form action="https://www.google.com/search">
+            <p id="headline">Jonansch-Search</p>
+        </div>
+        <div>
+            <form style="transition-delay: 200s;" action="https://www.google.com/search">
                 <div id="rere">
-                    <img id="r" src="images/pngwing.com (5).png" alt="">
-                    <input id="e" type="text" placeholder="Search here" name="q">
+                    <input id="e" type="text" placeholder="Search the web or type a URL" name="q">
+                    <input id="s1" type="submit" placeholder="Submit" name="s1">
                 </div>
                 
             </form>
@@ -141,29 +178,6 @@
                     <img style="width: 100px; margin-left:20px; padding-top: 10px; " src="images/Unbenannt.png" alt="">
                 </a>
                 
-            </div>
-            <div id="divad">
-                <p id="po">Advertisment</p>
-                <div id="handy">
-                    <img width="300px" src="images/handy.png" alt="">
-                    <p id="phandy">We optimized this pache for mobile phones and other devices. But it also works on your PC. </p>
-                </div>
-                <div id="divone">
-                    <iframe style="border: none; border-radius:30px; " width="450" height="315" src="https://www.youtube.com/embed/_b2lIrmaqJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p id="ptext">Check out my Youtube Channnel, and my other videos.</p>
-                </div>
-                <div id="divadb">
-                    <img  id="imgadb" src="images/XU_aOm.png" alt="">
-                    <div>
-                        <p id="ptextb">Check out my Cousin, who has created a nice Game witch Unity</p>
-                        <a href="https://thetobias.netlify.app">
-                            <img style=" text-decoration: none; margin-left: 30px; margin-top:px; " width="150px" src="images/GRtxVr-modified.png" alt="">
-                        </a>
-                    </div>
-                    
-                </div>
-
-
             </div>
         </footer>
 
